@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: white;
+      transition: background-color 0.5s;
+    }
+    .temperature {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 15px;
+      background: white;
+      border: none;
+      font-size: 17px;
+      border-radius: 6px;
+      cursor: pointer;
+      outline: none;
+    }
+    button:active {
+      opacity: 0.9;
+    }
+    .info {
+      position: absolute;
+      top: 0;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">Open two browser tabs side by side and click the button. After a pageload message history is used to get and display the latest state.</div>
+  <div class="temperature">-°C</div>
+  <button type="button">Random temperature</button>
+  <script src="script.js"></script>
+</body>
+</html>
